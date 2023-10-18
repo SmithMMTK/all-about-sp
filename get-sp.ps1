@@ -2,6 +2,10 @@
 Set-Item Env:\\SuppressAzurePowerShellBreakingChangeWarnings "true"
 # $applications = Get-AzADApplication -First 30
 # $servicePrincipals = Get-AzADServicePrincipal -First 30
+
+# Import AzureAD
+# Import Az
+
 $applications = Get-AzADApplication
 $servicePrincipals = Get-AzADServicePrincipal
 
