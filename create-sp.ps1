@@ -29,7 +29,7 @@ Write-Host "---------------------------------------"
 
 
 # Login with the service principal
-$TENANT_ID = "a7605e62-7543-4826-bff6-1a85e0138e3c"
+$TENANT_ID = "xxx"
 az logout
 az login --service-principal --username $servicePrincipal.appid --password $secret.secretText --tenant $TENANT_ID  
 az account show -o table
