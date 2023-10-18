@@ -38,7 +38,7 @@ $appWithCredentials | Sort-Object EndDate | % {
 }
 $appWithCredentials | export-csv -Path output-app.csv
 ## Get Owner
-Connect-AzAccount
+Connect-Az
 $newObj = @()
 foreach ($tmp in $appWithCredentials)
 {

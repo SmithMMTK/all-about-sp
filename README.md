@@ -20,6 +20,8 @@ AADServicePrincipalSignInLogs
 ```powershell
 Install-Module -Name AzureAD -Repository PSGallery -Force
 
+Get-AzureADServicePrincipal -ObjectId 7de2424d-f9d8-4ee7-b1f4-4b2441dc6ebf
+
 ```
 
 
