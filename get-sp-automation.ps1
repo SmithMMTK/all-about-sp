@@ -82,7 +82,7 @@ $applications | Select-Object Id, AppId, DisplayName, Note, PasswordCredentials 
 
  
     # Output the relevant information
-    $appInfo = @{
+    $appInfo = New-Object -TypeName PSObject -Property @{
         DisplayName = $_.DisplayName
         Id = $_.Id
         AppId = $_.AppId
